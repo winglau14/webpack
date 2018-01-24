@@ -3,7 +3,7 @@
         <p style="text-align: center">
             <span style="font-size: 0.37rem;">日期控件：</span>
             <span @click="bindDateChange('starTime')" style="font-size: 0.37rem;" v-text="starTime+'至'"></span>
-            <span @click="bindDateChange('endTime')" style="font-size: 0.37rem;" ></span>
+            <span @click="bindDateChange('endTime')" style="font-size: 0.37rem;" v-text="endTime"></span>
         </p>
         <!--日期控件-->
         <lotus-calendar @returnDate="choseDate" :calendarData="calendarData"></lotus-calendar>
