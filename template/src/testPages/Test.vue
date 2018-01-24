@@ -9,7 +9,12 @@
         <lotus-calendar @returnDate="choseDate" :calendarData="calendarData"></lotus-calendar>
     </div>
 </template>
-
+<style scoped>
+    .register{
+        padding-top: 50px;
+        font-size: 30px;
+    }
+</style>
 <script>
     export default {
         name: 'register',
@@ -17,8 +22,8 @@
         },
         data () {
             return {
-                starTime: '',
-                endTime: '',
+                starTime: '控件1',
+                endTime: '控件2',
                 calendarData:{
                     isShow:false
                 }

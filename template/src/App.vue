@@ -1,33 +1,26 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    {{#router}}
     <transition name="fade">
-    <router-view/>
+      <router-view keep-alive></router-view>
     </transition>
-    {{else}}
-    <HelloWorld/>
-    {{/router}}
   </div>
 </template>
 
 <script>
-{{#unless router}}
 import HelloWorld from './components/HelloWorld'
 
-{{/unless}}
 export default {
-  name: 'App'{{#router}}{{else}},
+  name: 'App',
   components: {
     HelloWorld
-  }{{/router}}
+  }
 }
 </script>
 
 <style lang="less">
   @import 'style/base.less';
   body, html {
-    background-color: #e95853;
+    background-color: #fff;
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
     color:#666;
