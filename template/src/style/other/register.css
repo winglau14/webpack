@@ -1,0 +1,147 @@
+.register {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff url("/static/new-register-bg.jpg") no-repeat bottom center;
+  background-size: 10rem 3.25333333rem;
+}
+.register .weui-cells:nth-of-type(1):before {
+  display: none;
+}
+.register .weui-cell:before {
+  left: 0.53333333rem;
+  right: 0.53333333rem;
+}
+.register-tips {
+  margin-bottom: 1.33333333rem;
+  padding-top: 0.93333333rem;
+  padding-left: 0.53333333rem;
+  font-size: 0.45333333rem;
+}
+.register-tips-hello {
+  font-size: 0.58666667rem;
+}
+.register-tips-welcome {
+  font-size: 0.4rem;
+}
+.register .weui-icon-info {
+  color: #cecece;
+  font-size: 0.42666667rem;
+  vertical-align: top;
+  margin-top: 0.08rem;
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.register .weui-icon-circle,
+.register .weui-icon-success {
+  font-size: 0.48rem;
+}
+.register .weui-cells {
+  margin-top: 0;
+  font-size: 0.42666667rem;
+}
+.register .weui-cells:after {
+  left: 0.53333333rem;
+  right: 0.53333333rem;
+}
+.register .weui-cell {
+  padding: 0.29333333rem 0.50666667rem;
+}
+.register .submit-btn {
+  padding-top: 1.06666667rem;
+  padding-right: 0.53333333rem;
+  padding-bottom: 0;
+  padding-left: 0.53333333rem;
+  box-sizing: border-box;
+}
+.register .code-model {
+  display: flex;
+}
+.register .code-val input {
+  display: block;
+  width: inherit;
+}
+.register .vux-spinner,
+.register .vux-spinner svg {
+  width: 0.4rem;
+  height: 0.4rem;
+  display: block;
+  vertical-align: middle;
+}
+.register .get-code-btn {
+  color: #fff;
+  font-size: 0.4rem;
+  white-space: nowrap;
+  width: 2.26666667rem;
+  line-height: 0.88rem;
+  background: #1aad19;
+  text-align: center;
+  border-radius: 0.13333333rem;
+  /*display: -webkit-box;
+  display: -webkit-flex;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register .get-code-btn span:nth-of-type(1) {
+  padding-right: 0.13333333rem;
+}
+.register .get-code-gray-btn {
+  background: #cbcbcb;
+}
+.register .submit-btn button.weui-btn,
+.register .weui-toast__content {
+  font-size: 0.42666667rem;
+}
+.register .weui-toast {
+  padding-left: 0.18666667rem;
+  padding-right: 0.18666667rem;
+  width: auto !important;
+}
+.register .weui-label,
+.register .match-code {
+  width: 1.6rem !important;
+}
+.register .code-val {
+  width: 6.72rem;
+}
+.register .vux-x-input {
+  line-height: 0.72rem;
+}
+.register input::-webkit-input-placeholder {
+  font-size: 0.4rem;
+}
+.register-protocol {
+  padding: 0.13333333rem 0.2rem;
+  font-size: 0.42666667rem;
+  line-height: 0.72rem;
+}
+.register-protocol a,
+.register-protocol a:active {
+  color: #0066cc;
+  display: inline-block;
+  vertical-align: middle;
+}
+.register-protocol span {
+  display: inline-block;
+  vertical-align: middle;
+}
+.register button {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-callout: none;
+}
+.register .submit-btn button.weui-btn {
+  border-radius: 0.13333333rem;
+  height: 1.25333333rem;
+}
+.register-logo {
+  width: 2.21333333rem;
+  height: 2.45333333rem;
+  vertical-align: middle;
+}

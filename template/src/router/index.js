@@ -1,15 +1,16 @@
-import Vue from 'vue'
-import Router from 'vue-router'
 const HelloWorld = resolve => require(['@/components/HelloWorld'], resolve);
+const Test = resolve => require(['@/testPages/Test'], resolve);
 
-Vue.use(Router)
-
-export default new Router({
-  routes: [
+const routes = [
     {
-      path: '/',
-      name: 'HelloWorld',
-      component: HelloWorld
+        path: '/',
+        name: 'HelloWorld',
+        component: HelloWorld
+    },
+    {
+        path: '/test',
+        name: 'Test',
+        component: Test
     }
-  ]
-})
+];
+export default routes;

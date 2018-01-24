@@ -3,13 +3,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 import App from './App'
-{{#router}}
-import router from './router'
-{{/router}}
-{{#vuex}}
+import routes from './router'
 import store from './vuex/store'
-{{/vuex}}
 //rem布局库
 import '../static/lib/newflexible'
 import es6Promise from 'es6-promise'
@@ -52,20 +49,16 @@ Vue.use(lotusCalendar)
 
 Vue.config.productionTip = false
 
+
+const router = new VueRouter({
+    routes
+});
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  {{#router}}
   router,
-  {{/router}},
-  {{#vuex}}
   store,
-  {{/vuex}}
-  {{#if_eq build "runtime"}}
-  render: h => h(App)
-  {{/if_eq}}
-  {{#if_eq build "standalone"}}
+  render: h => h(App),
   components: { App },
   template: '<App/>'
-  {{/if_eq}}
 })

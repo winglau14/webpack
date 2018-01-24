@@ -25,9 +25,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2"{{#router}},
-    "vue-router": "^3.0.1"{{/router}}{{#vuex}},
-    "vuex":"^2.2.1"{{/vuex}},
+    "vue": "^2.2.2",
+    "vue-router": "^2.3.0",
+    "vuex":"^2.2.1",
     "axios": "^0.17.1",
     "lotus-calendar": "^1.1.0",
     "lotus-url-query-string": "^1.0.2",

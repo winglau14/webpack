@@ -5,6 +5,13 @@
     <ul>
       <li>
         <a
+                href="/#/test"
+                target="_blank"
+        >
+          Test
+        </a>
+      <li>
+        <a
           href="https://vuejs.org"
           target="_blank"
         >
