@@ -34,25 +34,25 @@ module.exports = {
 
   prompts: {
     name: {
-      when: 'isNotTest',
+      //when: 'isNotTest',
       type: 'string',
       required: true,
       message: 'Project name',
     },
     description: {
-      when: 'isNotTest',
+      //when: 'isNotTest',
       type: 'string',
       required: false,
       message: 'Project description',
       default: 'A Vue.js project',
     },
     author: {
-      when: 'isNotTest',
+      //when: 'isNotTest',
       type: 'string',
       message: 'Author',
     },
     build: {
-      when: 'isNotTest',
+      //when: 'isNotTest',
       type: 'list',
       message: 'Vue build',
       choices: [
@@ -70,12 +70,12 @@ module.exports = {
       ],
     },
     lint: {
-      when: 'isNotTest',
+      //when: 'isNotTest',
       type: 'confirm',
       message: 'Use ESLint to lint your code?',
     },
     lintConfig: {
-      when: 'isNotTest && lint',
+      //when: 'isNotTest && lint',
       type: 'list',
       message: 'Pick an ESLint preset',
       choices: [
@@ -97,12 +97,12 @@ module.exports = {
       ],
     },
     unit: {
-      when: 'isNotTest',
+      //when: 'isNotTest',
       type: 'confirm',
       message: 'Set up unit tests',
     },
     runner: {
-      when: 'isNotTest && unit',
+      //when: 'isNotTest && unit',
       type: 'list',
       message: 'Pick a test runner',
       choices: [
@@ -124,12 +124,12 @@ module.exports = {
       ],
     },
     e2e: {
-      when: 'isNotTest',
+      //when: 'isNotTest',
       type: 'confirm',
       message: 'Setup e2e tests with Nightwatch?',
     },
     autoInstall: {
-      when: 'isNotTest',
+      //when: 'isNotTest',
       type: 'list',
       message:
         'Should we run `npm install` for you after the project has been created? (recommended)',
