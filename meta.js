@@ -155,13 +155,10 @@ module.exports = {
   filters: {
     '.eslintrc.js': 'lint',
     '.eslintignore': 'lint',
-    'build/webpack.test.conf.js': "unit && runner === 'karma'",
+    'config/test.env.js': 'unit || e2e',
+    'build/webpack.test.conf.js': "unit",
     'test/unit/**/*': 'unit',
-    'test/unit/index.js': "unit && runner === 'karma'",
-    'test/unit/jest.conf.js': "unit && runner === 'jest'",
-    'test/unit/karma.conf.js': "unit && runner === 'karma'",
-    'test/unit/specs/index.js': "unit && runner === 'karma'",
-    'test/unit/setup.js': "unit && runner === 'jest'",
+    'test/unit/index.js': "unit",
     'test/e2e/**/*': 'e2e'
   },
   complete: function(data, { chalk }) {
