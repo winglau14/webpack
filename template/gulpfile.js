@@ -97,9 +97,9 @@ gulp.task('jsonReplace',function(){
        .pipe(gulp.dest('static'));
 });
 //开发环境打包任务执行,PS:先运行yarn run build 再执行此命令
-gulp.task('deRun', gulpSequence(['deReplace','depackage']));
+gulp.task('deRun', gulpSequence(['deReplace'],'depackage'));
 //测试环境打包任务执行
-gulp.task('tsRun', gulpSequence(['tsReplace', 'tspackage']));
+gulp.task('tsRun', gulpSequence(['tsReplace'], 'tspackage'));
 //正式环境打包任务执行
 gulp.task('offRun', gulpSequence(['offReplace','offAppendJs'],'offpackage'));
 
