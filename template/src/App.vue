@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import HelloWorld from './pages/HelloWorld'
 
 export default {
   name: 'App',
