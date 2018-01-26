@@ -5,7 +5,7 @@ var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.base.conf')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
-var Jarvis = require('webpack-jarvis');
+//var Jarvis = require('webpack-jarvis');
 
 // add hot-reload related code to entry chunks
 Object.keys(baseWebpackConfig.entry).forEach(function (name) {
@@ -19,9 +19,9 @@ module.exports = merge(baseWebpackConfig, {
   // cheap-module-eval-source-map is faster for development
   devtool: '#cheap-module-eval-source-map',
   plugins: [
-      new Jarvis({
+      /*new Jarvis({
           port: 1337 // optional: set a port
-      }),
+      }),*/
     new webpack.DefinePlugin({
       'process.env': config.dev.env
     }),
