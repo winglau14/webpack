@@ -1,5 +1,5 @@
 const HelloWorld = resolve => require(['@/pages/HelloWorld'], resolve);
-const Test = resolve => require(['@/pages/Test'], resolve);
+const Test = resolve => require(['@/testPages/Test'], resolve);
 
 const routes = [
     {
