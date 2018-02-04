@@ -118,6 +118,7 @@ function postFetch(url, data, contentType, accessToken) {
         }
     }).then(checkStatus).then(checkCode);
 }
+
 //get or post请求封装
 export default {
     async get(url, params, contentType){
