@@ -13,6 +13,11 @@ const utils = {
             }
         });
         return `${time[0]}-${time[1]}-${time[2]}`
+    },
+    //判断是否有值
+    valueFormat(val, type){
+        type = !type ? '' : type;
+        return val ? val : type;
     }
 };
 export default utils;
