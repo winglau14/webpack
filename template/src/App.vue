@@ -51,6 +51,8 @@ export default {
 
   a:hover {
     text-decoration: none !important;
+    tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
   }
 
   a:active {
