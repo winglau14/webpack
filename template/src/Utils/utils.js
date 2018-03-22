@@ -53,6 +53,16 @@ const utils = {
         }else{
             callBack();
         }
+    },
+    //微信图片预览api调用 curImgInde点击需要显示图片的索引值 imgList显示的图片列表
+    wxImagePreview(curImgIndex,imgList){
+        let imgListObj = {
+            current:imgList[0],// 当前显示图片的http链接
+            urls:imgList// 需要预览的图片http链接列表
+        };
+        imgListObj.current = imgList[curImgIndex||0];
+        //调用微信预览图片api
+        wx.previewImage(imgListObj);
     }
 };
 export default utils;
