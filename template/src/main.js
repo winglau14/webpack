@@ -10,6 +10,7 @@ import store from './vuex/store'
 //rem布局库
 import '../static/lib/newflexible'
 import es6Promise from 'es6-promise'
+import 'babel-polyfill'
 //ajax请求
 import lotusAjax from './lotusPlugins/lotusApiRequest'
 //apiUrl地址
