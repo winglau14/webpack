@@ -428,6 +428,8 @@
 //按钮过的效果
 .transition(@val:#000){
   position: relative;
+  -webkit-user-select: none;
+  user-select: none;
   &:active{
     &::before{
       opacity: 0.15;
