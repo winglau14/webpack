@@ -12,12 +12,19 @@
   padding: 0;
   margin: 0;
 }
+
 input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button,input,input::-webkit-search-cancel-button{
+input::-webkit-inner-spin-button, input, input::-webkit-search-cancel-button {
   -webkit-appearance: none;
   appearance: none;
 }
-ul,li{
+
+a, button {
+  /*-webkit-tap-highlight-color: rgba(255, 255, 255, 0.5);
+  tap-highlight-color: rgba(255, 255, 255, 0.5);*/
+}
+
+ul, li {
   list-style: none;
 }
 
@@ -25,6 +32,8 @@ html {
   line-height: 1.15; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  tap-highlight-color:transparent;
+  -webkit-tap-highlight-color:transparent;
 }
 
 /* Sections
@@ -105,6 +114,7 @@ pre {
  */
 
 a {
+  text-decoration: none;
   background-color: transparent; /* 1 */
   -webkit-text-decoration-skip: objects; /* 2 */
 }
